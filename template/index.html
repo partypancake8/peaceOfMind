@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TODO: UPDATE ALL META TAGS FOR YOUR BUSINESS -->
+    <title>Peace Of Mind Living Solutions</title>
+    <meta name="description" content="Your business description here" />
+
+    <!-- TODO: REPLACE FAVICON -->
+    <link rel="icon" href="images/favicon.png" sizes="32x32" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header">
+      <!-- Top Header Bar with Phone -->
+      <div class="top-header">
+        <div class="container">
+          <div class="top-header-content">
+            <div class="header-info">
+              <span>PeaceofMindLifeSolutions LLC</span>
+            </div>
+            <!-- TODO: UPDATE PHONE NUMBER -->
+            <div class="header-phone">
+              <a href="tel:(248) 880-1342">📞 (248) 880-1342</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Header -->
+      <div class="mobile-header">
+        <div class="container">
+          <div class="header-content">
+            <!-- TODO: REPLACE LOGO IMAGE -->
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  src="images/logo.png"
+                  alt="Peace Of Mind Living Solutions"
+                  width="300"
+                  height="91"
+                />
+              </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" aria-label="Toggle Menu">
+              <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>MENU</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <div class="container">
+          <!-- TODO: REPLACE LOGO IMAGE -->
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/logo.png"
+                alt="Peace of Mind Life Solutions"
+                width="300"
+                height="91"
+              />
+            </a>
+          </div>
+
+          <!-- Navigation Menu -->
+          <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rates.html">Rates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Solid Color Bar -->
+      <div class="header-bar"></div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="site-main">
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <!-- TODO: REPLACE BACKGROUND IMAGE in CSS -->
+        <div class="container">
+          <div class="hero-content">
+            <!-- TODO: UPDATE YOUR MAIN HEADLINE -->
+            <h1 class="hero-title">Your Main Headline Here</h1>
+
+            <!-- Feature Highlights -->
+            <div class="features-grid">
+              <!-- TODO: UPDATE YOUR SERVICE HIGHLIGHTS -->
+              <div class="feature-item">Licensed & Insured</div>
+              <div class="feature-item">Local & Long Distance</div>
+              <div class="feature-item">Professional Service</div>
+              <div class="feature-item">Competitive Rates</div>
+              <div class="feature-item">No Hidden Fees</div>
+              <div class="feature-item">Affordable Pricing</div>
+            </div>
+          </div>
+
+          <!-- QUOTE FORM -->
+          <div class="quote-form-container">
+            <div class="quote-form-card">
+              <h2>Get a Free Quote</h2>
+
+              <form id="quoteForm" class="quote-form">
+                <!-- Step 1: From ZIP -->
+                <div class="form-step active" id="step1">
+                  <h3>Where are you moving from?</h3>
+                  <input
+                    type="text"
+                    id="fromZip"
+                    placeholder="Enter ZIP Code"
+                    maxlength="5"
+                    required
+                  />
+                  <div class="error-message" id="error1">
+                    Please enter a valid ZIP Code.
+                  </div>
+                  <button type="button" class="btn-next" onclick="nextStep(1)">
+                    Next
+                  </button>
+                  <p class="call-instead">
+                    Prefer to call instead?
+                    <a href="tel:(248) 880-1342">(248) 880-1342</a>
+                  </p>
+                </div>
+
+                <!-- Step 2: To ZIP -->
+                <div class="form-step" id="step2">
+                  <h3>Where are you moving to?</h3>
+                  <input
+                    type="text"
+                    id="toZip"
+                    placeholder="Enter ZIP Code"
+                    maxlength="5"
+                    required
+                  />
+                  <div class="error-message" id="error2">
+                    Please enter a valid ZIP Code.
+                  </div>
+                  <button type="button" class="btn-next" onclick="nextStep(2)">
+                    Next
+                  </button>
+                  <button type="button" class="btn-back" onclick="prevStep(2)">
+                    Back
+                  </button>
+                  <p class="call-instead">
+                    Prefer to call instead?
+                    <a href="tel:(248) 880-1342">(248) 880-1342</a>
+                  </p>
+                </div>
+
+                <!-- Step 3: Moving Date -->
+                <div class="form-step" id="step3">
+                  <h3>Select Target Moving Date</h3>
+                  <input type="date" id="moveDate" required />
+                  <div class="error-message" id="error3">
+                    Please select a valid date.
+                  </div>
+                  <button type="button" class="btn-next" onclick="nextStep(3)">
+                    Next
+                  </button>
+                  <button type="button" class="btn-back" onclick="prevStep(3)">
+                    Back
+                  </button>
+                  <p class="call-instead">
+                    Prefer to call instead?
+                    <a href="tel:(248) 880-1342">(248) 880-1342</a>
+                  </p>
+                </div>
+
+                <!-- Step 4: Move Size -->
+                <div class="form-step" id="step4">
+                  <h3>Select Size of Move</h3>
+                  <div class="radio-group">
+                    <label class="radio-option">
+                      <input
+                        type="radio"
+                        name="moveSize"
+                        value="Studio"
+                        onclick="nextStep(4)"
+                      />
+                      <span>Studio</span>
+                    </label>
+                    <label class="radio-option">
+                      <input
+                        type="radio"
+                        name="moveSize"
+                        value="1 Bedroom"
+                        onclick="nextStep(4)"
+                      />
+                      <span>1 Bedroom</span>
+                    </label>
+                    <label class="radio-option">
+                      <input
+                        type="radio"
+                        name="moveSize"
+                        value="2 Bedroom"
+                        onclick="nextStep(4)"
+                      />
+                      <span>2 Bedroom</span>
+                    </label>
+                    <label class="radio-option">
+                      <input
+                        type="radio"
+                        name="moveSize"
+                        value="3 Bedroom"
+                        onclick="nextStep(4)"
+                      />
+                      <span>3 Bedroom</span>
+                    </label>
+                    <label class="radio-option">
+                      <input
+                        type="radio"
+                        name="moveSize"
+                        value="4+ Bedroom"
+                        onclick="nextStep(4)"
+                      />
+                      <span>4+ Bedroom</span>
+                    </label>
+                  </div>
+                  <button type="button" class="btn-back" onclick="prevStep(4)">
+                    Back
+                  </button>
+                </div>
+
+                <!-- Step 5: Name -->
+                <div class="form-step" id="step5">
+                  <h3>Enter First and Last Name</h3>
+                  <div class="name-inputs">
+                    <input
+                      type="text"
+                      id="firstName"
+                      placeholder="First Name"
+                      required
+                    />
+                    <input
+                      type="text"
+                      id="lastName"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                  <div class="error-message" id="error5">
+                    Please enter your name.
+                  </div>
+                  <button type="button" class="btn-next" onclick="nextStep(5)">
+                    Next
+                  </button>
+                  <button type="button" class="btn-back" onclick="prevStep(5)">
+                    Back
+                  </button>
+                  <p class="call-instead">
+                    Prefer to call instead?
+                    <a href="tel:(248) 880-1342">(248) 880-1342</a>
+                  </p>
+                </div>
+
+                <!-- Step 6: Phone -->
+                <div class="form-step" id="step6">
+                  <h3>Enter Phone Number</h3>
+                  <input
+                    type="tel"
+                    id="phoneNumber"
+                    placeholder="(555) 555-5555"
+                    required
+                  />
+                  <div class="error-message" id="error6">
+                    Please enter a valid phone number.
+                  </div>
+                  <button type="button" class="btn-next" onclick="nextStep(6)">
+                    Next
+                  </button>
+                  <button type="button" class="btn-back" onclick="prevStep(6)">
+                    Back
+                  </button>
+                  <p class="call-instead">
+                    Prefer to call instead?
+                    <a href="tel:(248) 880-1342">(248) 880-1342</a>
+                  </p>
+                </div>
+
+                <!-- Step 7: Email -->
+                <div class="form-step" id="step7">
+                  <h3>Enter E-mail Address</h3>
+                  <input
+                    type="email"
+                    id="emailAddress"
+                    placeholder="email@example.com"
+                    required
+                  />
+                  <div class="error-message" id="error7">
+                    Please enter a valid email address.
+                  </div>
+                  <button type="button" class="btn-next" onclick="submitForm()">
+                    Submit
+                  </button>
+                  <button type="button" class="btn-back" onclick="prevStep(7)">
+                    Back
+                  </button>
+                  <p class="call-instead">
+                    Prefer to call instead?
+                    <a href="tel:(248) 880-1342">(248) 880-1342</a>
+                  </p>
+                </div>
+
+                <!-- Thank You Step -->
+                <div class="form-step" id="stepThanks">
+                  <h2 class="thank-you-title">Thank You!</h2>
+                  <p class="thank-you-message">We will contact you soon.</p>
+                  <p class="call-instead">
+                    Questions? Call us at
+                    <a href="tel:(248) 880-1342">(248) 880-1342</a>
+                  </p>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                  <div class="progress-fill" id="progressBar"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE AREA SECTION -->
+      <section class="service-area-section">
+        <div class="container">
+          <!-- TODO: UPDATE YOUR SERVICE AREA TEXT -->
+          <h2 class="section-title">
+            Proudly Serving <strong>Your Service Area</strong> and surrounding
+            areas
+          </h2>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <!-- TODO: UPDATE YOUR BUSINESS DESCRIPTION -->
+            <h2>Your Catchy Tagline</h2>
+            <p>
+              Your business description goes here. Explain what makes your
+              service unique and why customers should choose you.
+            </p>
+
+            <!-- TODO: UPDATE SERVICE AREAS - REPLACE WITH YOUR CITIES -->
+            <h3>Cities We Serve in [Your County], [State]</h3>
+            <div class="city-links">
+              <a href="#">City 1</a>
+              <a href="#">City 2</a>
+              <a href="#">City 3</a>
+              <a href="#">City 4</a>
+              <a href="#">City 5</a>
+              <a href="#">City 6</a>
+              <!-- Add more cities as needed -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG/RESOURCES SECTION -->
+      <section class="resources-section">
+        <div class="container">
+          <div class="resources-grid">
+            <!-- TODO: REPLACE BLOG POST 1 IMAGE AND CONTENT -->
+            <a href="#" class="resource-card">
+              <div class="resource-image">
+                <img src="images/blog-1.jpg" alt="Resource 1" />
+              </div>
+              <div class="resource-content">
+                <span class="resource-date">Date Here</span>
+                <h3>Your Blog Post Title 1</h3>
+              </div>
+            </a>
+
+            <!-- TODO: REPLACE BLOG POST 2 IMAGE AND CONTENT -->
+            <a href="#" class="resource-card">
+              <div class="resource-image">
+                <img src="images/blog-2.jpg" alt="Resource 2" />
+              </div>
+              <div class="resource-content">
+                <span class="resource-date">Date Here</span>
+                <h3>Your Blog Post Title 2</h3>
+              </div>
+            </a>
+
+            <!-- TODO: REPLACE BLOG POST 3 IMAGE AND CONTENT -->
+            <a href="#" class="resource-card">
+              <div class="resource-image">
+                <img src="images/blog-3.jpg" alt="Resource 3" />
+              </div>
+              <div class="resource-content">
+                <span class="resource-date">Date Here</span>
+                <h3>Your Blog Post Title 3</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Footer Navigation -->
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="rates.html">Rates</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- TODO: UPDATE PHONE NUMBER -->
+          <div class="footer-contact">
+            <a href="tel:(248) 880-1342" class="footer-phone">(248) 880-1342</a>
+          </div>
+
+          <!-- TODO: REPLACE FOOTER LOGO IMAGE -->
+          <div class="footer-logo">
+            <img
+              src="images/logo-white.png"
+              alt="Your Business Name"
+              width="150"
+            />
+          </div>
+
+          <!-- Copyright -->
+          <div class="footer-copyright">
+            <!-- TODO: UPDATE BUSINESS NAME AND YEAR -->
+            <p>&copy; 2025 Copyright Your Business Name</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Off-Canvas Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-overlay"></div>
+      <div class="mobile-menu-content">
+        <button class="mobile-menu-close" aria-label="Close Menu">×</button>
+        <ul class="mobile-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="rates.html">Rates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TODO: UPDATE ALL META TAGS FOR YOUR BUSINESS -->
+    <title>Contact Us | Your Business Name</title>
+    <meta
+      name="description"
+      content="Get in touch with us today. We're here to help!"
+    />
+
+    <!-- TODO: REPLACE FAVICON -->
+    <link rel="icon" href="images/favicon.png" sizes="32x32" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="site-header">
+      <!-- Top Header Bar with Phone -->
+      <div class="top-header">
+        <div class="container">
+          <div class="top-header-content">
+            <div class="header-info">
+              <span>Your License Info</span>
+            </div>
+            <!-- TODO: UPDATE PHONE NUMBER -->
+            <div class="header-phone">
+              <a href="tel:(248) 880-1342">📞 (248) 880-1342</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Header -->
+      <div class="mobile-header">
+        <div class="container">
+          <div class="header-content">
+            <!-- TODO: REPLACE LOGO IMAGE -->
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  src="images/logo.png"
+                  alt="Your Business Name"
+                  width="300"
+                  height="91"
+                />
+              </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" aria-label="Toggle Menu">
+              <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>MENU</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <div class="container">
+          <!-- TODO: REPLACE LOGO IMAGE -->
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/logo.png"
+                alt="Your Business Name"
+                width="300"
+                height="91"
+              />
+            </a>
+          </div>
+
+          <!-- Navigation Menu -->
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rates.html">Rates</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Solid Color Bar -->
+      <div class="header-bar"></div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="site-main">
+      <!-- PAGE HEADER -->
+      <section class="page-header">
+        <div class="container">
+          <!-- TODO: UPDATE PAGE TITLE -->
+          <h1>Contact Us</h1>
+          <p class="page-subtitle">We'd love to hear from you!</p>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Contact Information -->
+            <div class="contact-info-box">
+              <h2>Get In Touch</h2>
+              <p>
+                Have questions? Need a quote? We're here to help! Contact us
+                using any of the methods below.
+              </p>
+
+              <div class="contact-methods">
+                <!-- TODO: UPDATE ALL CONTACT INFORMATION -->
+
+                <div class="contact-method">
+                  <div class="contact-icon">📞</div>
+                  <div class="contact-details">
+                    <h3>Phone</h3>
+                    <p><a href="tel:(248) 880-1342">(248) 880-1342</a></p>
+                    <p class="contact-note">
+                      Mon-Fri: 8am-6pm<br />Sat: 9am-3pm
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="contact-icon">✉️</div>
+                  <div class="contact-details">
+                    <h3>Email</h3>
+                    <p>
+                      <a href="mailto:info@yourbusiness.com"
+                        >info@yourbusiness.com</a
+                      >
+                    </p>
+                    <p class="contact-note">We respond within 24 hours</p>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="contact-icon">📍</div>
+                  <div class="contact-details">
+                    <h3>Address</h3>
+                    <p>
+                      123 Main Street<br />
+                      Your City, ST 12345
+                    </p>
+                    <p class="contact-note">By appointment only</p>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="contact-icon">🕐</div>
+                  <div class="contact-details">
+                    <h3>Business Hours</h3>
+                    <p>
+                      Monday - Friday: 8:00 AM - 6:00 PM<br />
+                      Saturday: 9:00 AM - 3:00 PM<br />
+                      Sunday: Closed
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TODO: ADD YOUR SOCIAL MEDIA LINKS -->
+              <div class="social-links">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook">📘</a>
+                  <a href="#" aria-label="Instagram">📷</a>
+                  <a href="#" aria-label="Twitter">🐦</a>
+                  <a href="#" aria-label="LinkedIn">💼</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-box">
+              <h2>Send Us a Message</h2>
+              <p>
+                Fill out the form below and we'll get back to you as soon as
+                possible.
+              </p>
+
+              <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject *</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Select a subject...</option>
+                    <option value="quote">Request a Quote</option>
+                    <option value="service">Service Inquiry</option>
+                    <option value="support">Customer Support</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    placeholder="Tell us how we can help..."
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="newsletter" />
+                    <span
+                      >Subscribe to our newsletter for updates and special
+                      offers</span
+                    >
+                  </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+
+                <p class="form-note">
+                  * Required fields. We respect your privacy and will never
+                  share your information.
+                </p>
+              </form>
+
+              <!-- Form Success Message (hidden by default) -->
+              <div
+                id="formSuccess"
+                class="form-message success"
+                style="display: none"
+              >
+                <h3>✓ Message Sent!</h3>
+                <p>
+                  Thank you for contacting us. We'll get back to you shortly.
+                </p>
+              </div>
+
+              <!-- Form Error Message (hidden by default) -->
+              <div
+                id="formError"
+                class="form-message error"
+                style="display: none"
+              >
+                <h3>⚠ Oops!</h3>
+                <p>
+                  Something went wrong. Please try again or call us directly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAP SECTION (Optional) -->
+      <section class="map-section">
+        <div class="container">
+          <h2 class="section-title-centered">Visit Us</h2>
+          <!-- TODO: ADD YOUR GOOGLE MAPS EMBED -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412648750455!2d-73.98823492346445!3d40.748817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU1LjciTiA3M8KwNTknMTcuNiJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+            <p class="map-note">
+              Replace this with your actual business location on Google Maps
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE AREAS -->
+      <section class="service-areas-section">
+        <div class="container">
+          <!-- TODO: UPDATE YOUR SERVICE AREAS -->
+          <h2 class="section-title-centered">Areas We Serve</h2>
+          <p class="section-intro">
+            Proudly serving customers throughout the region
+          </p>
+
+          <div class="areas-grid">
+            <div class="area-column">
+              <h3>County 1</h3>
+              <ul>
+                <li>City 1</li>
+                <li>City 2</li>
+                <li>City 3</li>
+                <li>City 4</li>
+                <li>City 5</li>
+              </ul>
+            </div>
+            <div class="area-column">
+              <h3>County 2</h3>
+              <ul>
+                <li>City 6</li>
+                <li>City 7</li>
+                <li>City 8</li>
+                <li>City 9</li>
+                <li>City 10</li>
+              </ul>
+            </div>
+            <div class="area-column">
+              <h3>County 3</h3>
+              <ul>
+                <li>City 11</li>
+                <li>City 12</li>
+                <li>City 13</li>
+                <li>City 14</li>
+                <li>City 15</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="areas-note">
+            Don't see your area listed? Contact us - we may still be able to
+            help!
+          </p>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section class="cta-section">
+        <div class="container">
+          <h2>Prefer to Talk?</h2>
+          <p>Give us a call and speak with a real person today</p>
+          <div class="cta-buttons">
+            <!-- TODO: UPDATE PHONE NUMBER -->
+            <a href="tel:(248) 880-1342" class="btn-large btn-primary"
+              >Call (248) 880-1342</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Footer Navigation -->
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="rates.html">Rates</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- TODO: UPDATE PHONE NUMBER -->
+          <div class="footer-contact">
+            <a href="tel:(248) 880-1342" class="footer-phone">(248) 880-1342</a>
+          </div>
+
+          <!-- TODO: REPLACE FOOTER LOGO IMAGE -->
+          <div class="footer-logo">
+            <img
+              src="images/logo-white.png"
+              alt="Your Business Name"
+              width="150"
+            />
+          </div>
+
+          <!-- Copyright -->
+          <div class="footer-copyright">
+            <!-- TODO: UPDATE BUSINESS NAME AND YEAR -->
+            <p>&copy; 2025 Copyright Your Business Name</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Off-Canvas Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-overlay"></div>
+      <div class="mobile-menu-content">
+        <button class="mobile-menu-close" aria-label="Close Menu">×</button>
+        <ul class="mobile-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="rates.html">Rates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
