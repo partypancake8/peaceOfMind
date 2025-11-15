@@ -145,6 +145,11 @@ a:hover {
   align-items: center;
 }
 
+.mobile-header .logo img {
+  height: 50px;
+  width: auto;
+}
+
 .mobile-header .contact-info {
   text-align: center;
   color: white;
@@ -208,7 +213,8 @@ a:hover {
 }
 
 .main-nav .logo img {
-  max-height: 70px;
+  height: 100px;
+  width: auto;
 }
 
 .nav-phone {
